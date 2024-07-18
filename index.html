@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breeds</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-4">Dog Breeds</h1>
+    <form id="breedForm" class="mb-4">
+      <div class="form-group">
+        <label for="breedSelect">Select Breed:</label>
+        <select class="form-control" id="breedSelect">
+          <!-- Options will be populated dynamically -->
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Get Random Dog Image</button>
+    </form>
+    <div id="dogContainer" class="d-none">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title" id="dogBreed"></h5>
+          <img id="dogImage" src="" alt="Dog Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
